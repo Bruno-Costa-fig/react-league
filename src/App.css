@@ -1,0 +1,69 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.campo {
+    width: 100vw;
+    height: 100vh;
+    background: url("/campo.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.cabecalho {
+    width: calc(100% - 4em);
+    margin: 2em;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+
+.titulo {
+    font-size: 3em;
+}
+
+.goal_img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.placar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(21, 71, 104);
+    font-size: 2em;
+    background-color: rgba(197, 252, 197, 0.7);
+    border-radius: 1em;
+    padding: 0.5em;
+}
+
+.num_goals {
+    font-size: 5em;
+    padding: 0.2em;
+    color: rgb(21, 71, 104);
+}
+
+.time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em;
+    gap: 1em;
+}
+
+.btn_goal {
+    background-color: rgb(21, 71, 104);
+    color: white;
+    font-size: 1.5em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+  
