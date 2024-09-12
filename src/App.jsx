@@ -1,31 +1,25 @@
 import "./App.css"
-import { useState } from "react";
-import Cabecalho from "./components/Cabecalho";
 
 function App() {
 
-  const [golsPython, setGolsPython] = useState(0);
-  const [golsJavascript, setGolsJavascript] = useState(0);
-
-  function addGoal(time, valor) {
-    if (time === "A") {
-      setGolsPython(golsPython + valor);
-    } else {
-      setGolsJavascript(golsJavascript + valor);
-    }
-  }
-
   return (
-    <div className="campo">
-      <Cabecalho addGoal={addGoal} />
+      <div className="cabecalho">
+        <div className="time">
+          <img src="/Python_FC.png" alt="logo Python FC" width={200} />
+          <button className="btn_goal">Goal</button>
+        </div>
+        <div className="time">
+          <img src="/Javascript.png" alt="logo Javascript da Colina" width={250} />
+          <button className="btn_goal">Goal</button>
+        </div>
       <div className="placar">
         <h2>Placar</h2>
         <p>
           PFC
-          <span className="num_goals">{golsPython}</span>
+          <span className="num_goals">0</span>
           x
-          <span className="num_goals">{golsJavascript}</span> 
-          JSC  
+          <span className="num_goals">0</span>
+          JSC
         </p>
       </div>
     </div>);

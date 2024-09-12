@@ -2,16 +2,6 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
-.campo {
-    width: 100vw;
-    height: 100vh;
-    background: url("/campo.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
 .cabecalho {
     width: calc(100% - 4em);
     margin: 2em;
